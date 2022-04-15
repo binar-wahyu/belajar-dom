@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Create dari JavaScript</title>
+</head>
+<body>
+    <h2 class="text-rahasia">Text rahasia yang akan dihapus dalam 5 detik</h2>
+    <script>
+        /* Belajar create */
+        const judul = document.createElement("h1");
+        judul.textContent = "Ini Judul dari JavaScript";
+        judul.style.color = "violet";
+        judul.style.padding = "24px";
+        judul.style.marginTop = "100px";
+
+        document.body.append(judul);
+
+        /* Belajar remove */
+        setTimeout(function() {
+            const textRahasia = document.querySelector('.text-rahasia');
+            textRahasia.remove();
+        }, 5000);
+    </script>
+</body>
+</html>

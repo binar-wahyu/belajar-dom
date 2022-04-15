@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Get Elements By Class Name</title>
+</head>
+<body>
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates totam quasi excepturi at doloribus animi nisi itaque consectetur laudantium. Ipsam animi quis explicabo provident velit non, quasi adipisci. Hic, accusantium?
+    </p>
+
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates totam quasi excepturi at doloribus animi nisi itaque consectetur laudantium. Ipsam animi quis explicabo provident velit non, quasi adipisci. Hic, accusantium?
+    </p>
+
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates totam quasi excepturi at doloribus animi nisi itaque consectetur laudantium. Ipsam animi quis explicabo provident velit non, quasi adipisci. Hic, accusantium?
+    </p>
+
+    <script>
+        const banyakParagraf = document.getElementsByClassName("paragraf");
+        setInterval(function() {
+            banyakParagraf[0].style.color = 'red';
+            banyakParagraf[1].style.color = 'green';
+            banyakParagraf[2].style.color = 'blue';
+
+            setTimeout(function() {
+                banyakParagraf[0].style.color = 'black';
+                banyakParagraf[1].style.color = 'black';
+                banyakParagraf[2].style.color = 'black';
+            }, 500); // 500 = 0.5 detik
+        }, 1000); // 1000 = 1 detik
+    </script>
+</body>
+</html>

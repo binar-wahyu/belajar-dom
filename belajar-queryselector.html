@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Query Selector</title>
+</head>
+<body>
+    <div class="app"></div>
+
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates totam quasi excepturi at doloribus animi nisi itaque consectetur laudantium. Ipsam animi quis explicabo provident velit non, quasi adipisci. Hic, accusantium?
+    </p>
+
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates totam quasi excepturi at doloribus animi nisi itaque consectetur laudantium. Ipsam animi quis explicabo provident velit non, quasi adipisci. Hic, accusantium?
+    </p>
+
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates totam quasi excepturi at doloribus animi nisi itaque consectetur laudantium. Ipsam animi quis explicabo provident velit non, quasi adipisci. Hic, accusantium?
+    </p>
+
+    <script>
+        const app = document.querySelector(".app");
+        app.style.backgroundColor = "red";
+
+        const banyakParagraf = document.querySelectorAll(".paragraf");
+        banyakParagraf.forEach(function(paragraf) {
+            paragraf.style.color = 'blue';
+        });
+    </script>
+</body>
+</html>
